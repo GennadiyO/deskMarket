@@ -1,0 +1,50 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "desk",
+            "otherEntityName": "desk",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "deskId",
+            "otherEntityRelationshipName": "deskProperty"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "deskPropertyId",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "DeskPropertyType",
+            "fieldValues": "LENGTH,WIDTH,HEIGHT,MIN_HEIGHT,MAX_HEIGHT,LIFTING_CAPACITY,WEIGHT",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "value",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20200331163606",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "desk_property",
+    "databaseType": "sql",
+    "readOnly": false,
+    "jpaMetamodelFiltering": true,
+    "pagination": "infinite-scroll"
+}

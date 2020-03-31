@@ -1,0 +1,9 @@
+export const enum DeskPropertyType {
+  LENGTH = 'LENGTH',
+  WIDTH = 'WIDTH',
+  HEIGHT = 'HEIGHT',
+  MIN_HEIGHT = 'MIN_HEIGHT',
+  MAX_HEIGHT = 'MAX_HEIGHT',
+  LIFTING_CAPACITY = 'LIFTING_CAPACITY',
+  WEIGHT = 'WEIGHT'
+}

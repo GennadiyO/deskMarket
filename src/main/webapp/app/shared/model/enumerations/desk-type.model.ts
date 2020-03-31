@@ -1,0 +1,4 @@
+export const enum DeskType {
+  LIFTING_DESK_OVERLAY = 'LIFTING_DESK_OVERLAY',
+  LIFTING_DESK = 'LIFTING_DESK'
+}
